@@ -78,7 +78,7 @@ ID of a channel on the inbox server where logs are posted after a modmail thread
 ## Other options
 
 #### accountAgeDeniedMessage
-**Default:** `Your Discord account is not old enough to contact modmail.`  
+**Default:** `Sua conta Discord foi criada recentemente, não é possível contato com o suporte por aqui.`  
 See `requiredAccountAge` below
 
 #### allowMove
@@ -121,7 +121,7 @@ See [inlineSnippetStart](#inlineSnippetStart) and [inlineSnippetEnd](#inlineSnip
 If enabled, moderators can change the role that's shown with their replies to any role they currently have using the `!role` command.
 
 #### alwaysReply
-**Default:** `off`  
+**Default:** `on`  
 If enabled, all messages in modmail threads will be sent to the user without having to use `!r`.  
 To send internal messages in the thread when this option is enabled, prefix them with `!note` (using your `prefix`),
 e.g. `!note This is an internal message`.
@@ -131,7 +131,7 @@ e.g. `!note This is an internal message`.
 If `alwaysReply` is enabled, this option controls whether the auto-reply is anonymous
 
 #### anonymizeChannelName
-**Default:** `off`  
+**Default:** `on`  
 If enabled, channel names will be the user's name and discriminator salted with the current time, then hashed to protect the user's privacy
 
 #### attachmentStorage
@@ -146,7 +146,7 @@ Controls how attachments in modmail threads are stored. Possible values:
 When using attachmentStorage is set to "discord", the id of the channel on the inbox server where attachments are saved
 
 #### autoAlert
-**Default:** `off`  
+**Default:** `on`  
 If enabled, the last moderator to reply to a modmail thread will be automatically alerted when the thread gets a new reply.  
 This alert kicks in after a delay, set by the `autoAlertDelay` option below.
 
@@ -159,7 +159,7 @@ The delay after which `autoAlert` kicks in. Uses the same format as timed close;
 If set, the bot auto-replies to bot mentions (pings) with this message. Use `{userMention}` in the text to ping the user back.
 
 #### categoryAutomation.newThread
-**Default:** *None*  
+**Default:** `878494223798779964`
 ID of the category where new threads are opened. Also functions as a fallback for `categoryAutomation.newThreadFromServer`.
 
 #### categoryAutomation.newThreadFromGuild.SERVER_ID
@@ -274,7 +274,7 @@ Set to `none` to disable these pings entirely.
 If enabled, mentions the user messaging modmail in the modmail thread's header.
 
 #### newThreadCategoryId
-**Default:** *None*  
+**Default:** `878494223798779964`  
 **Deprecated.** Same as `categoryAutomation.newThread`.
 
 #### notifyOnMainServerJoin
@@ -321,7 +321,7 @@ If enabled, small attachments from users are sent as real attachments rather tha
 The limit for "small" is 2MB by default; you can change this with the `smallAttachmentLimit` option.
 
 #### requiredAccountAge
-**Default:** *None*  
+**Default:** `2`  
 Required account age for contacting modmail (in hours). If the account is not old enough, a new thread will not be created and the bot will reply with `accountAgeDeniedMessage` (if set) instead.
 
 #### requiredTimeOnServer
